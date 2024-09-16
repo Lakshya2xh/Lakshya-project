@@ -14,9 +14,6 @@ elif operator=='*':
 elif operater=='/':
     if b!=0:
         result=a/b
-        print(result)
-    else:
-        print("error:you can't devide something by zero")
-
+        print(result)
 else:
     print("invalid operator")
