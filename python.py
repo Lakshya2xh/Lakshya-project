@@ -15,5 +15,4 @@ elif operater=='/':
     if b!=0:
         result=a/b
         print(result)
-else:
-    print("invalid operator")
+
