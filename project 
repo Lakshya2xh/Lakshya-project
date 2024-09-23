@@ -1,4 +1,4 @@
-# Taking user inputs
+
 s = int(input("Enter starting point: "))
 e = int(input("Enter ending point: "))
 u = int(input("Enter updation point: "))
@@ -6,12 +6,10 @@ f = input("Enter 'v' for vertical and 'h' for horizontal: ")
 o = input("Enter 'r' for reverse and 'f' for forward: ")
 b = int(input("Enter a break number: "))
 n = int(input("Enter a continue number: "))
-
-# Handling invalid updation step
 if u == 0:
     print("Updation point cannot be zero!")
 else:
-    # Reverse order
+    
     if o == "r":
         if s > e:  # Ensuring valid range for reverse order
             for i in range(s, e-1, -u):
@@ -26,7 +24,7 @@ else:
         else:
             print("Error: For reverse order, starting point must be greater than ending point.")
 
-    # Forward order
+    
     elif o == "f":
         if s < e:  # Ensuring valid range for forward order
             for i in range(s, e+1, u):
