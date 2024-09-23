@@ -11,12 +11,12 @@ if u == 0:
 else:
     
     if o == "r":
-        if s > e:  # Ensuring valid range for reverse order
+        if s > e:  
             for i in range(s, e-1, -u):
                 if i == n:
-                    continue  # Skipping the 'continue' number
+                    continue  
                 if i == b:
-                    break  # Stopping at the 'break' number
+                    break  
                 if f == "h":
                     print(i, end=", ")
                 elif f == "v":
@@ -26,12 +26,12 @@ else:
 
     
     elif o == "f":
-        if s < e:  # Ensuring valid range for forward order
+        if s < e:  
             for i in range(s, e+1, u):
                 if i == n:
-                    continue  # Skipping the 'continue' number
+                    continue  
                 if i == b:
-                    break  # Stopping at the 'break' number
+                    break 
                 if f == "h":
                     print(i, end=", ")
                 elif f == "v":
